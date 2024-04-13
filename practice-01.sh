@@ -10,10 +10,10 @@
 #echo "Addition of 2 numbers is: $SUM"
 
 echo "Please enter your username /n"
-read  username
+read  -s username
 echo "entered username is $username"
 
 echo "Please enter your password /n"
 
-read  password
+read  -s password
 echo "entered password is $password"
