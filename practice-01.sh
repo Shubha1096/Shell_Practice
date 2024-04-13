@@ -1,7 +1,7 @@
 #!/bin/bash
- read Number
+ read Number=$1
 
-if [Number -ne 0]
+if [Number -gt 0]
 then
     echo "Print then"
 else
