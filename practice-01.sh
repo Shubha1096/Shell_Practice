@@ -9,11 +9,16 @@
 
 #echo "Addition of 2 numbers is: $SUM"
 
-echo "Please enter your username /n"
-read  -s username
-echo "entered username is $username"
+# echo "Please enter your username /n"
+# read  -s username
+# echo "entered username is $username"
 
-echo "Please enter your password /n"
+# echo "Please enter your password /n"
 
-read  -s password
-echo "entered password is $password"
+# read  -s password
+# echo "entered password is $password"
+
+
+LIST=$(ls -lrt)
+
+echo "$List"
