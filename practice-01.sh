@@ -21,4 +21,4 @@
 
 LIST=$(ls)
 
-echo "$List"
+echo "$LIST"
