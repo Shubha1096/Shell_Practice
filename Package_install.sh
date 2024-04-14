@@ -2,7 +2,7 @@
 
 USER=$(id -u)
 
-if  [ $USER -ne 0];
+if  [ $USER -ne 0 ];
 then    
     echo "User is not root"
     exit 1
