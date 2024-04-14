@@ -6,9 +6,10 @@ if  [ $USER -ne 0 ];
 then    
     echo "User is not root"
     exit 1
+else 
+    sudo -i    
 fi 
    
-
 for i in $@
 do  
     yum list installed $i $>> /dev/null
