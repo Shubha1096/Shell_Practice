@@ -39,6 +39,7 @@
 for i in $@
 do 
 
-    sudo yum install $i -y
+    # sudo yum install $i -y
+    echo "$y"
 done    
 # echo "List of packages : $PACKAGE"
