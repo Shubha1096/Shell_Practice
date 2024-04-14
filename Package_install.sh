@@ -11,7 +11,7 @@ fi
 for i in $@
 do  
     sudo yum list installed $i $>> /dev/null
-    if [$i -ne 0];
+    if [$? -ne 0];
     then    
         echo "$i is not installed " 
          echo "Installing  $i ...."
