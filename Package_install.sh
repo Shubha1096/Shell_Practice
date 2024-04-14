@@ -7,9 +7,9 @@ VALIDATE (){
 
 if [ $1 -ne 0 ];
 then   
-     echo "$2 is installed sucessfully" 
+     echo "$2 is not installed sucessfully" 
 else
-    echo "$2 is not installed sucessfully"   
+    echo "$2 is  installed sucessfully"   
 fi     
 }
 
