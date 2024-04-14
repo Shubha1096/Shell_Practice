@@ -14,12 +14,11 @@ do
     yum list installed $i $>> /dev/null
     if [$i -ne 0];
     then    
-        echo "$i is not installe " 
-
-    echo "Installing  $i ...."
+        echo "$i is not installed " 
+         echo "Installing  $i ...."
          yum install $i -y &>> /dev/null
-    echo "Installation of  $i is completed"
+        echo "Installation of  $i is completed"
     else 
-        echo ("$i is already installed ") 
+        echo "$i is already installed "
     fi    
 done
