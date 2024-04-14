@@ -2,7 +2,7 @@
 
 USER=$(id -u)
 
-if  [ $USER -gt 0]
+if  [ $USER -ne 0];
 then    
     echo "User is not root"
     exit 1
@@ -11,7 +11,7 @@ fi
 
 for i in $@
 do  
-    Echo "Installing  $i ...."
+    echo "Installing  $i ...."
     sudo yum install $i -y &>> /dev/null
     Echo "Installation of  $i is completed"
 done
