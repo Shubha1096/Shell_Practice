@@ -19,6 +19,6 @@
 # echo "entered password is $password"
 
 
-LIST=$(ls -lrt)
+LIST=$(ls -lrt | grep )
 
 echo "$LIST"
