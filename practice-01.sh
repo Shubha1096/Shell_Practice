@@ -24,4 +24,13 @@
 # echo "$LIST"
 
 PACKAGE=("$1","$2","$3")
-echo "List of packages : $PACKAGE"
+user=$(id -u)
+Root=$(sudo -i)
+
+if [ $user -gt 0]
+then
+    echo "User is not Root User"
+    echo "Switching to Root User"
+    $Root
+    echo "Swiched to Root User....!"
+# echo "List of packages : $PACKAGE"
