@@ -12,6 +12,6 @@ fi
 for i in $@
 do  
     Echo "Installing  $i ...."
-    yum install $i -y &>> /dev/null
+    sudo yum install $i -y &>> /dev/null
     Echo "Installation of  $i is completed"
 done
