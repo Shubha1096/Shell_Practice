@@ -27,7 +27,7 @@ do
         echo "$i is not installed " 
         echo "Installing  $i ...."
         yum install $i -y &>> /dev/null
-        VALIDATE $? $i
+        VALIDATE "$?" "$i"
     else 
         echo "$i is already installed "
     fi    
