@@ -19,6 +19,6 @@
 # echo "entered password is $password"
 
 
-LIST=$(ls -lrt | grep README.md | awk -F "" '{print $NF}')
+LIST=$(ls -lrt | grep README.md | awk -F " " '{print $NF}')
 
 echo "$LIST"
