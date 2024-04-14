@@ -5,7 +5,7 @@ USER=$(id -u)
 if  [ $USER -ne 0 ];
 then    
     echo "User is not root"
-    sudo -i        
+    sudo -i     
 fi 
    
 for i in $@
