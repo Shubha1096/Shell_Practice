@@ -18,7 +18,10 @@
 # read  -s password
 # echo "entered password is $password"
 
-File=$1
-LIST=$(ls -lrt | grep "$File" | awk -F " " '{print $NF}' | cat $File )
+# File=$1
+# LIST=$(ls -lrt | grep "$File" | awk -F " " '{print $NF}' | cat $File )
 
-echo "$LIST"
+# echo "$LIST"
+
+PACKAGE=("$1","$2","$3")
+echo "List of packages : $PACKAGE"
