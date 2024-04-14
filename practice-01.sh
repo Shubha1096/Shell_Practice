@@ -19,6 +19,6 @@
 # echo "entered password is $password"
 
 
-LIST=$(ls -lrt | grep )
+LIST=$(ls -lrt | grep README.md)
 
 echo "$LIST"
