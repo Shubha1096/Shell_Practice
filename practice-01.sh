@@ -35,11 +35,11 @@
 #     echo "Swiched to Root User....!"
 # else 
 #     echo "User is Root User"
-
+echo "$#"
 for i in $@
 do 
 
-    # sudo yum install $i -y
-    echo "$y"
+    sudo yum install $i -y
+    
 done    
 # echo "List of packages : $PACKAGE"
