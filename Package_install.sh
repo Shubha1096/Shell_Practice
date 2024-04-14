@@ -13,5 +13,5 @@ for i in $@
 do  
     echo "Installing  $i ...."
     sudo yum install $i -y &>> /dev/null
-    Echo "Installation of  $i is completed"
+    echo "Installation of  $i is completed"
 done
