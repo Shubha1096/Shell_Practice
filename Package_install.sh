@@ -9,11 +9,10 @@ if [ $1 -ne 0 ];
 then   
      echo "$i is installed sucessfully" 
 else
-    echo "$i is not installed sucessfully"     
-
-
-
+    echo "$i is not installed sucessfully"   
+fi     
 }
+
 if  [ $USER -ne 0 ];
 then    
     echo "User is not root"
