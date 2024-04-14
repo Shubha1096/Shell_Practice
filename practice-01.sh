@@ -24,17 +24,17 @@
 # echo "$LIST"
 
  PACKAGE=("$1","$2","$3")
-# user=$(id -u)
-# Root=$(sudo -i)
+user=$(id -u)
+Root=$(sudo -i)
 
-# if [ $user -gt 0]
-# then
-#     echo "User is not Root User"
-#     echo "Switching to Root User"
-#     $Root
-#     echo "Swiched to Root User....!"
-# else 
-#     echo "User is Root User"
+if [ $user -gt 0]
+then
+    echo "User is not Root User"
+    echo "Switching to Root User"
+    $Root
+    echo "Swiched to Root User....!"
+else 
+    echo "User is Root User"
 
 for i in $PACKAGE
 do 
