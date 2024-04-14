@@ -36,9 +36,8 @@
 # else 
 #     echo "User is Root User"
 
-for i in $PACKAGE
+for i in $@
 do 
-    echo "$PACKAGE"
-    # sudo yum install $i -y
+    sudo yum install $i -y
 done    
 # echo "List of packages : $PACKAGE"
