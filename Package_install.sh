@@ -7,9 +7,9 @@ VALIDATE (){
 
 if [ $1 -ne 0 ];
 then   
-     echo "$i is installed sucessfully" 
+     echo "$2 is installed sucessfully" 
 else
-    echo "$i is not installed sucessfully"   
+    echo "$2 is not installed sucessfully"   
 fi     
 }
 
@@ -28,7 +28,6 @@ do
         echo "Installing  $i ...."
         yum install $i -y &>> /dev/null
         VALIDATE $? $i
-        echo "Installation of  $i is completed"
     else 
         echo "$i is already installed "
     fi    
