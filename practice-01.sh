@@ -23,7 +23,7 @@
 
 # echo "$LIST"
 
- PACKAGE=("$1","$2","$3")
+#  PACKAGE=("$1","$2","$3")
 # user=$(id -u)
 # Root=$(sudo -i)
 
@@ -38,6 +38,7 @@
 
 for i in $@
 do 
+
     sudo yum install $i -y
 done    
 # echo "List of packages : $PACKAGE"
