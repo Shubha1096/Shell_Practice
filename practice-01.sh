@@ -18,7 +18,7 @@
 # read  -s password
 # echo "entered password is $password"
 
-
-LIST=$(ls -lrt | grep README.md | awk -F " " '{print $NF}')
+File=README.md
+LIST=$(ls -lrt | grep "$File" | awk -F " " '{print $NF}' | Cat $File )
 
 echo "$LIST"
