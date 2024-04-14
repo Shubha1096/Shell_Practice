@@ -11,7 +11,14 @@ fi
 
 for i in $@
 do  
+    yum list installed $i $>> /dev/null
+    if [$i -ne 0]
+    then    
+        echo ("$i is not installed ") 
+
     echo "Installing  $i ...."
-    sudo yum install $i -y &>> /dev/null
+         yum install $i -y &>> /dev/null
     echo "Installation of  $i is completed"
+    else 
+        echo ("$i is already installed ") 
 done
