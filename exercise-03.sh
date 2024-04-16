@@ -7,13 +7,12 @@
 # step 5:- repeat step 3 and 4 till i==0
 # step 6:- end
 
-INPUT=DEVOPS
-LENGTH=${#INPUT}
+INPUT=$1
+REVERSE=$($INPUT | rev)
 
-echo $LENGTH
-
-for i=$LENGTH-1 in i>=0
-do
-$reverse= $({string:$i:1})
-
-done 
+if [ $INPUT -eq $REVERSE];
+then 
+    echo "Number is Palindrome"
+else    
+echo "Number is Not Palindrome")   
+fi
