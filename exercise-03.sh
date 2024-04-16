@@ -7,10 +7,9 @@
 # step 5:- repeat step 3 and 4 till i==0
 # step 6:- end
 
-INPUT=$1
-REVERSE=$($INPUT | rev)
+REVERSE=$($1 | rev)
 
-if [ $INPUT -eq $REVERSE];
+if [ $1 -eq $REVERSE];
 then 
     echo "Number is Palindrome"
 else    
