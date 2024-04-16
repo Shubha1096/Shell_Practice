@@ -13,7 +13,8 @@ REVERSE=$(echo $INPUT | rev)
 
 echo $INPUT
 echo $REVERSE
-if [ $INPUT -eq $REVERSE ];
+
+if [ $INPUT == $REVERSE ];
 then 
     echo "Number is Palindrome"
 else    
