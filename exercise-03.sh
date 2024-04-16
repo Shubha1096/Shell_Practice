@@ -14,5 +14,5 @@ if [ $INPUT -eq $REVERSE];
 then 
     echo "Number is Palindrome"
 else    
-echo "Number is Not Palindrome")   
+    echo "Number is Not Palindrome"  
 fi
