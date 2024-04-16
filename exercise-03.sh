@@ -11,3 +11,9 @@ INPUT=DEVOPS
 LENGTH=${#INPUT}
 
 echo $LENGTH
+
+for i=$LENGTH-1 in i>=0
+do
+$reverse= $({string:$i:1})
+
+done 
