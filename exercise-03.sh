@@ -10,6 +10,9 @@
 INPUT=$1
 REVERSE=$(echo $INPUT | rev)
 
+
+echo $INPUT
+echo $REVERSE
 if [ $INPUT -eq $REVERSE ];
 then 
     echo "Number is Palindrome"
